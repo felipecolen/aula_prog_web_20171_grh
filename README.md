@@ -1,4 +1,4 @@
-![Logo Python](https://github.com/felipecolen/aula_prog_web_20171_grh/raw/master/static/python-powered.svg) ![Logo Django](https://github.com/felipecolen/aula_prog_web_20171_grh/raw/master/static/django.gif)
+![Logo Python](https://github.com/felipecolen/aula_prog_web_20171_grh/raw/master/static/python-powered.png) ![Logo Django](https://github.com/felipecolen/aula_prog_web_20171_grh/raw/master/static/django.gif)
 
 # Sistema Gerenciador de RH
 Exemplo de Sistema de Gestão de RH, desenvolvido passo a passo na disciplina de Técnicas Avançadas de Programação para 
