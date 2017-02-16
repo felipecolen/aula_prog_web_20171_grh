@@ -1,7 +1,15 @@
+"""
+Aqui deve ficar tudo que for referente ao modelo de dados.
+Tabelas do banco representadas na forma de classes.
+Tabelas abstratas representadas na forma de classes.
+"""
 from django.db import models
 
-# Create your models here.
+
 class Pessoa(models.Model):
+    """
+    Classe referente a tabela Pessoa
+    """
     nome = models.CharField(max_length=150)
     sexo = models.CharField(max_length=1)
     cpf = models.CharField(max_length=11)
