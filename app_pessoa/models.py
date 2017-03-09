@@ -2,6 +2,8 @@
 Aqui deve ficar tudo que for referente ao modelo de dados.
 Tabelas do banco representadas na forma de classes.
 Tabelas abstratas representadas na forma de classes.
+
+Mais informações aqui https://docs.djangoproject.com/pt-br/1.10/topics/db/models/
 """
 from django.db import models
 

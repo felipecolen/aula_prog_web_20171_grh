@@ -5,6 +5,11 @@ Exemplo de Sistema de Gestão de RH, desenvolvido passo a passo na disciplina de
 _Web_ 2017/1, no Curso Técnico em Informática para Internet do IFRO _Campus_ Porto Velho Zona Norte.
 
 
+### Instalações
+[Veja este arquivo](https://github.com/felipecolen/aula_prog_web_20171_grh/raw/master/CONFIGS_BASICAS.md)
+
+### Models (Modelos)
+[Veja este arquivo](https://github.com/felipecolen/aula_prog_web_20171_grh/raw/master/MODELS.md)
 
 ### Arquitetura do projeto
 
