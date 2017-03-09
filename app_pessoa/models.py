@@ -14,8 +14,25 @@ class Pessoa(models.Model):
     """
     nome = models.CharField(max_length=150)
     sexo = models.CharField(max_length=1)
-    cpf = models.CharField(max_length=11)
-    endereco = models.CharField(max_length=250)
-    telefone = models.CharField(max_length=20)
+    cpf = models.CharField('CPF', max_length=11)
+    endereco = models.CharField('Endereço', max_length=250)
+    telefone = models.CharField(max_length=20, blank=True,
+                                help_text='Informe se o seu celular for da Claro')
     email = models.CharField(max_length=60)
     data_nascimento = models.DateField()
+
+    def __str__(self):
+        return '{} - {}'.format(self.id, self.nome)
+
+
+class Cargo(models.Model):
+    nome_cargo = models.CharField('Nome do Cargo', max_length=30)
+
+    def __str__(self):
+        return '{} - {}'.format(self.id, self.nome_cargo)
+
+
+class Contrato(models.Model):
+    id_pessoa = models.ForeignKey(Pessoa, verbose_name='Pessoa')
+    id_cargo = models.ForeignKey(Cargo, verbose_name='Cargo')
+    data_admissao = models.DateField('Data da Admissão')
