@@ -20,6 +20,10 @@ _Web_ 2017/1, no Curso Técnico em Informática para Internet do IFRO _Campus_ P
 ### Dependências
 - django==1.10.5
 
+### Usuário e Senha
+Crie um usuário com o comando `python3 manage.py createsuperuser`
+
+Ou utilize o usuário aluno e a senha alunoifro
 
 ## Comandos básicos
 Em um terminal, dentro da pasta do projeto, você pode executar os seguintes comandos.

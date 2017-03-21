@@ -22,14 +22,14 @@ class Pessoa(models.Model):
     data_nascimento = models.DateField()
 
     def __str__(self):
-        return '{} - {}'.format(self.id, self.nome)
+        return 'Pessoa: {} - {}'.format(self.id, self.nome)
 
 
 class Cargo(models.Model):
     nome_cargo = models.CharField('Nome do Cargo', max_length=30)
 
     def __str__(self):
-        return '{} - {}'.format(self.id, self.nome_cargo)
+        return 'Cargo: {} - {}'.format(self.id, self.nome_cargo)
 
 
 class Contrato(models.Model):

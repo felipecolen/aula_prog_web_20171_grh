@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+MEU ARQUIVO DE PESSOA
+<br><br><br><br><br>
+{% for pessoa in lista_de_pessoa %}
+  {{ pessoa.id }} - {{ pessoa.nome }} - CPF: {{ pessoa.cpf }}<br>
+
+{% endfor %}
+</body>
+</html>

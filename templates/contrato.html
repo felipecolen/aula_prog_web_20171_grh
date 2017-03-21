@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+MEU ARQUIVO DE CONTRATOS
+<br><br><br><br>
+<table>
+<thead style="border: 1px;">
+<tr>
+  <th>ID</th>
+  <th>CPF</th>
+  <th>Cargo</th>
+</tr>
+</thead>
+<tbody>
+{% for contrato in lista_de_contratos %}
+  <tr>
+  <td>{{ contrato.id }} </td>
+  <td>{{ contrato.id_pessoa.cpf }} </td>
+  <td>{{ contrato.id_cargo.nome_cargo }} </td>
+  </tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>

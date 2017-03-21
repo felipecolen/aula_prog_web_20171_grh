@@ -16,6 +16,18 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from app_pessoa import views
+
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),  # aqui são as urls do ADMIN, não precisa alterar nada aqui
+
+    url(r'^$', views.index),  #é a url referente a "raiz" do sistema o /, ex: localhost:8000/
+    url(r'^index/', views.index, name='index'),  # corresponde a localhost:8000/index
+    url(r'^pessoa/', views.mostrapessoa),
+    url(r'^contratos/', views.mostrarcontrato),
+
+
+    # url(r'^index/', views., name='pessoa'),
+    # url(r'^index/', views.index, name='index'),
+
 ]
